@@ -80,12 +80,6 @@ MOV BX,LEN2
     JZ LAST
 
  L2:DEC BX
-    PUSH SI
-    PUSH CX
-    MOV AX,LEN2
-    CMP BX,AX
-    JNZ L4
- L4:
     INC SI
     INC DI
     CMP BX,0000
